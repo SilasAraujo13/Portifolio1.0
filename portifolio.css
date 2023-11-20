@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alice", serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+.bordaTela {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #d2af4f;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+}
+.btn-contato button:hover {
+  box-shadow: 0 0 10px #d2af4f;
+  transform: scale(1.05);
+  transition: 1.5s;
+}
+h2 {
+  color: #d2af4f;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/*estilo do cabeçalho*/
+header {
+  padding: 60px 4%;
+}
+
+header > .bordaTela {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #929191;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+header a:hover {
+  color: #d2af4f;
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.logo img {
+  display: inline-block;
+  height: 100px;
+}
+/*texto topo do site*/
+section.topo-do-site {
+  padding: 40px 4%;
+}
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+.topo-do-site h1 {
+  color: #d2af4f;
+  font-size: 24px;
+}
+.topo-do-site p {
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+.topo-do-site .img-topo-site img {
+  height: 300px;
+  border-radius: 10px;
+}
+
+/*especialidades*/
+
+section.especialidades .interface {
+  padding: 120px 4%;
+}
+
+section.especialidades .flex {
+  gap: 60px;
+}
+.especialidades .especialidade-box {
+  color: #fff;
+  padding: 40px;
+  border-radius: 30px;
+  padding-top: 25px;
+  transition: 1s;
+}
+.especialidades .especialidade-box:hover {
+  box-shadow: 0 0 10px #d2af4f;
+  transform: scale(1.05);
+}
+.especialidades .especialidade-box i {
+  font-size: 70px;
+  color: #d2af4f;
+}
+.especialidades .especialidade-box h3 {
+  color: #d2af4f;
+  font-size: 20px;
+  margin: 15px 0;
+}
+.especialidades .especialidade-box p {
+  color: #fff;
+  text-align: justify;
+}
+/*estilo sobre*/
+section.sobre .interface {
+  padding: 60px 4%;
+  padding-left: 100px;
+}
+section.sobre .interface .flex {
+  gap: 60px;
+}
+section.sobre .interface .flex .txt-sobre h2 {
+  font-size: 24px;
+  color: #fff;
+  line-height: 25px;
+}
+section.sobre .interface .flex .txt-sobre h2 span {
+  color: #d2af4f;
+  display: block;
+}
+.sobre .interface .img-sobre img {
+  height: 350px;
+  border-radius: 30px;
+}
+
+.txt-sobre p {
+  color: #fff;
+  text-align: justify;
+}
+.sobre .txt-sobre .btn-social button {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 0;
+  transition: 1s;
+}
+.sobre .flex .txt-sobre .btn-social button:hover {
+  box-shadow: 0 0 10px #d2af4f;
+  transform: scale(1.05);
+  background-color: #d2af4f;
+}
+/*Formulario*/
+section.formulario {
+  padding: 80px 4%;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+form input,
+textarea {
+  width: 100%;
+  background-color: #161616;
+  border: 0;
+  border-radius: 15px;
+  outline: 0;
+  padding: 20px 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+form textarea {
+  resize: none;
+  max-height: 400px;
+}
+form .btn-enviar {
+  margin: 20px;
+  text-align: center;
+}
+form .btn-enviar input {
+  width: 120px;
+  background-color: #d2af4f;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+  transition: 1s;
+}
+form .btn-enviar input:hover {
+  box-shadow: 0 0 10px #d2af4f;
+  transform: scale(1.05);
+}
+/*estilo footer*/
+footer {
+  padding: 60px 4%;
+}
+footer .line-footer .logo-footer img {
+  height: 80px;
+}
+footer .flex {
+  justify-content: space-between;
+}
+footer .flex .btn-social button {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  background-color: #d2af4f;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 0;
+  transition: 1s;
+}
+footer .flex .btn-social button:hover {
+  box-shadow: 0 0 10px #d2af4f;
+  transform: scale(1.05);
+}
+footer .line-footer-borda {
+  padding: 20px 0;
+}
+.borda {
+  border-top: 2px solid #d2af4f;
+}
+footer .line-footer p i {
+  color: #d2af4f;
+  font-size: 25px;
+}
+footer .line-footer a {
+  color: #fff;
+  text-decoration: none;
+}
